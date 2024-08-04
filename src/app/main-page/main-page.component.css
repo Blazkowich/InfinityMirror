@@ -2,11 +2,13 @@
 .w3-top {
   position: fixed;
   width: 100%;
-  z-index: 1;
+  overflow: visible; /* Ensure navbar doesn't clip the dropdown */
+  z-index: 1000; /* Ensure the navbar stays on top */
 }
 
 .w3-bar {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative; /* Ensure dropdown is positioned relative to the navbar */
 }
 
 .w3-bar-item {
@@ -81,35 +83,10 @@ header img {
   padding: 16px;
 }
 
-/* Media Queries */
-@media (max-width: 320px) {
-  .w3-xxlarge {
-    font-size: 6vw; /* Larger font size for very small screens */
-  }
-}
-
-@media (min-width: 321px) and (max-width: 375px) {
-  .w3-xxlarge {
-    font-size: 5vw; /* Adjusted font size for small screens */
-  }
-}
-
-@media (min-width: 376px) and (max-width: 768px) {
-  .w3-xxlarge {
-    font-size: 4vw; /* Medium font size for medium screens */
-  }
-}
-
-@media (min-width: 769px) {
-  .w3-xxlarge {
-    font-size: 36px; /* Fixed size for larger screens */
-  }
-}
-
 /* Project items */
 .project-item {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   height: 400px;
 }
 
@@ -117,6 +94,11 @@ header img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.project-item:hover .project-img {
+  transform: scale(1.1);
 }
 
 .w3-row-padding {
@@ -160,3 +142,68 @@ footer {
   background-color: rgb(255, 255, 255);
 }
 
+/* Footer Styling */
+footer {
+  padding: 16px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  position: relative; /* Ensure it accommodates the flags properly */
+}
+
+/* Language Selector in Footer */
+.language-selector-footer {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Spacing between flags */
+}
+
+.language-selector-footer .lang-label {
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+.language-selector-footer .flag-link {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.language-selector-footer img {
+  width: 24px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 4px; /* Optional: adds a border radius to the flags */
+  transition: opacity 0.3s ease;
+}
+
+.language-selector-footer img:hover {
+  opacity: 0.8; /* Optional: add hover effect */
+}
+
+/* Media Queries */
+@media (max-width: 320px) {
+  .w3-xxlarge {
+    font-size: 6vw;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+  .w3-xxlarge {
+    font-size: 5vw;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 768px) {
+  .w3-xxlarge {
+    font-size: 4vw;
+  }
+}
+
+@media (min-width: 769px) {
+  .w3-xxlarge {
+    font-size: 36px;
+  }
+}

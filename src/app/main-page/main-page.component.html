@@ -1,11 +1,11 @@
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="#home" class="w3-bar-item w3-button"><b>Infinity</b> ∞ Mirrors</a>
+    <a href="#home" class="w3-bar-item w3-button"><b>{{ 'navName1' | translate }}</b>{{ 'navName2' | translate}}</a>
     <div class="w3-right w3-hide-small">
-      <a href="#projects" class="w3-bar-item w3-button">Projects</a>
-      <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+      <a href="#projects" class="w3-bar-item w3-button">{{ 'projects' | translate }}</a>
+      <a href="#about" class="w3-bar-item w3-button">{{ 'about' | translate }}</a>
+      <a href="#contact" class="w3-bar-item w3-button">{{ 'contact' | translate }}</a>
     </div>
   </div>
 </div>
@@ -15,9 +15,9 @@
   <img class="w3-image" src="../../assets/main-banner-infinity-mirror.webp" alt="Main Banner">
   <div class="w3-display-middle">
     <h1 class="w3-xxlarge w3-text-white">
-      <span class="w3-padding w3-black w3-opacity-min"><b>Infinity</b></span>
+      <span class="w3-padding w3-black w3-opacity-min"><b>{{ 'navName1' | translate }}</b></span>
       <br>
-      <span class="w3-text-light-grey">Mirrors</span>
+      <span class="w3-text-light-grey">{{ 'navName2' | translate }}</span>
     </h1>
   </div>
 </header>
@@ -27,7 +27,7 @@
 
   <!-- Project Section -->
   <div class="w3-container w3-padding-32" id="projects">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">{{ 'projects' | translate }}</h3>
   </div>
 
   <div class="w3-row-padding">
@@ -59,19 +59,24 @@
 
   <!-- About Section -->
   <div class="w3-container w3-padding-32" id="about">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
-    <p>We're a company that manufactures infinity mirrors with the size, shape and image you want so that you can beautify and update your interior.</p>
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">{{ 'about' | translate }}</h3>
+    <p>{{ 'description' | translate }}</p>
   </div>
 </div>
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-16" id="contact">
-  <p><b>Contact</b> Us</p>
+  <p><b>{{ 'contact' | translate }}</b> {{ 'us' | translate}}</p>
   <div class="social">
     <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook'></i></a>
     <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram'></i></a>
     <a href="https://www.youtube.com/" target="_blank"><i class='bx bxl-youtube'></i></a>
     <a href="https://web.whatsapp.com/" target="_blank"><i class='bx bxl-whatsapp'></i></a>
     <a href="https://t.me/" target="_blank"><i class='bx bxl-telegram'></i></a>
+  </div>
+  <div class="language-selector-footer">
+    <a href="#" (click)="changeLanguage('en')" class="flag-link"><img src="../../assets/flags/en.png" alt="English" /></a>
+    <a href="#" (click)="changeLanguage('ge')" class="flag-link"><img src="../../assets/flags/ge.png" alt="Georgian" /></a>
+    <a href="#" (click)="changeLanguage('ru')" class="flag-link"><img src="../../assets/flags/ru.png" alt="Russian" /></a>
   </div>
 </footer>

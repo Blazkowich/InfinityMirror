@@ -1,12 +1,21 @@
 import { Component } from '@angular/core';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'main-page',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './main-page.component.html',
-  styleUrl: './main-page.component.css'
+  styleUrls: ['./main-page.component.css']
 })
 export class MainPageComponent {
+  constructor(private translate: TranslateService) {
+    this.translate.setDefaultLang('ge');
 
+    this.translate.use('ge');
+  }
+
+  changeLanguage(lang: string) {
+    this.translate.use(lang);
+  }
 }
