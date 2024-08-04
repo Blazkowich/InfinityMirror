@@ -1,0 +1,20 @@
+{
+  "en": [
+    { "name": "prod1", "image": "../../assets/mirror1.jpg", "story": "prodStory1", "title": "Cosmo", "description": "Abgd" },
+    { "name": "prod2", "image": "../../assets/mirror2.jpg", "story": "prodStory2", "title": "Terminal", "description": "Evzt" },
+    { "name": "prod3", "image": "../../assets/mirror3.jpg", "story": "prodStory3", "title": "Tiny Universe", "description": "Iklmn" },
+    { "name": "prod4", "image": "../../assets/mirror4.webp", "story": "prodStory4", "title": "Table of Infinity", "description": "Opjrst" }
+  ],
+  "ge": [
+    { "name": "prod1", "image": "../../assets/mirror1.jpg", "story": "prodStory1", "title": "კოსმო", "description": "აბგდ" },
+    { "name": "prod2", "image": "../../assets/mirror2.jpg", "story": "prodStory2", "title": "ტერმინალი", "description": "ევზთ" },
+    { "name": "prod3", "image": "../../assets/mirror3.jpg", "story": "prodStory3", "title": "ციცქნა სამყარო", "description": "იკლმნ" },
+    { "name": "prod4", "image": "../../assets/mirror4.webp", "story": "prodStory4", "title": "უსასრულობის მაგიდა", "description": "ოპჟრსტ" }
+  ],
+  "ru": [
+    { "name": "prod1", "image": "../../assets/mirror1.jpg", "story": "prodStory1", "title": "Космо", "description": "Абгд" },
+    { "name": "prod2", "image": "../../assets/mirror2.jpg", "story": "prodStory2", "title": "Терминал", "description": "Евзт" },
+    { "name": "prod3", "image": "../../assets/mirror3.jpg", "story": "prodStory3", "title": "Маленькая Вселенная", "description": "Иклмн" },
+    { "name": "prod4", "image": "../../assets/mirror4.webp", "story": "prodStory4", "title": "Стол Бесконечности", "description": "Оперст" }
+  ]
+}

@@ -1,0 +1,6 @@
+.dialog-container {
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}

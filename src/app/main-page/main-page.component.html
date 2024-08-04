@@ -1,7 +1,7 @@
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="#home" class="w3-bar-item w3-button"><b>{{ 'navName1' | translate }}</b>{{ 'navName2' | translate}}</a>
+    <a href="#home" class="w3-bar-item w3-button"><b>{{ 'navName1' | translate }}</b>{{'inf' | translate }}{{'navName2' | translate}}</a>
     <div class="w3-right w3-hide-small">
       <a href="#projects" class="w3-bar-item w3-button">{{ 'projects' | translate }}</a>
       <a href="#about" class="w3-bar-item w3-button">{{ 'about' | translate }}</a>
@@ -17,6 +17,8 @@
     <h1 class="w3-xxlarge w3-text-white">
       <span class="w3-padding w3-black w3-opacity-min"><b>{{ 'navName1' | translate }}</b></span>
       <br>
+      <span class="w3-text-light-grey">{{ 'inf' | translate }}</span>
+      <br>
       <span class="w3-text-light-grey">{{ 'navName2' | translate }}</span>
     </h1>
   </div>
@@ -31,28 +33,10 @@
   </div>
 
   <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container project-item">
-        <div class="w3-display-topleft w3-black w3-padding">{{ "prod1" | translate }}</div>
-        <img src="../../assets/mirror1.jpg" alt="Cosmo" class="project-img">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container project-item">
-        <div class="w3-display-topleft w3-black w3-padding">{{ "prod2" | translate }}</div>
-        <img src="../../assets/mirror2.jpg" alt="Raw Rows" class="project-img">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container project-item">
-        <div class="w3-display-topleft w3-black w3-padding">{{ "prod3" | translate }}</div>
-        <img src="../../assets/mirror3.jpg" alt="Little Universe" class="project-img">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container project-item">
-        <div class="w3-display-topleft w3-black w3-padding">{{ "prod4" | translate }}</div>
-        <img src="../../assets/mirror4.webp" alt="Infinity Table" class="project-img">
+    <div class="w3-col l3 m6 w3-margin-bottom" *ngFor="let product of products">
+      <div class="w3-display-container project-item" (click)="openDialog(product)">
+        <div class="w3-display-topleft w3-black w3-padding">{{ product.title | translate }}</div>
+        <img [src]="product.image" [alt]="product.title" class="project-img">
       </div>
     </div>
   </div>

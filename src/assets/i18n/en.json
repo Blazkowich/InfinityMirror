@@ -1,6 +1,7 @@
 {
-  "navName1": "Infinity",
-  "navName2": " ∞ Mirrors",
+  "navName1": "Infinity ",
+  "inf": " ∞ ",
+  "navName2": "Mirrors",
   "projects": "Projects",
   "about": "About",
   "description": "We're a company that manufactures infinity mirrors with the size, shape and image you want so that you can beautify and update your interior.",
@@ -10,6 +11,12 @@
 
   "prod1": "Cosmo",
   "prod2": "Terminal",
-  "prod3": "Little Universe",
-  "prod4": "Table of Infinity"
+  "prod3": "Tiny Universe",
+  "prod4": "Table of Infinity",
+
+
+  "prodStory1": "Abgd",
+  "prodStory2": "Evzt",
+  "prodStory3": "Iklmn",
+  "prodStory4": "Opjrst"
 }

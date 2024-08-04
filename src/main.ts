@@ -6,6 +6,7 @@ import { HttpLoaderFactory } from './app/app-translate.loader';
 import { provideRouter } from '@angular/router';
 import { routes } from './app/app.routes';
 import { AppComponent } from './app/app-component/app.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 const appConfig: ApplicationConfig = {
   providers: [
@@ -19,7 +20,7 @@ const appConfig: ApplicationConfig = {
         }
       })
     ),
-    provideRouter(routes) // Directly include provideRouter outside importProvidersFrom
+    provideRouter(routes), provideAnimationsAsync()
   ]
 };
 
