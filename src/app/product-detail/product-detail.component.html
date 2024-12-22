@@ -1,4 +1,5 @@
-<div class="dialog-container">
+<div class="dialog-container" *ngIf="product">
+  <img [src]="product.image" [alt]="product.title" class="image-container">
   <h2>{{ data.title }}</h2>
   <p>{{ data.description }}</p>
 </div>

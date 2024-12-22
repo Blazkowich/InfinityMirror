@@ -3,7 +3,7 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ProductDetailComponent } from '../product-detail/product-detail.component';
 import { CommonModule } from '@angular/common';
-import { ProductService } from '../product-detail/product.service';
+import { ProductService } from '../services/product.service';
 
 @Component({
   selector: 'main-page',
