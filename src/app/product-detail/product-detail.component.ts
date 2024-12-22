@@ -8,10 +8,11 @@ import { ProductService } from '../services/product.service';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './product-detail.component.html',
-  styleUrl: './product-detail.component.css'
+  styleUrls: ['./product-detail.component.css']
 })
 export class ProductDetailComponent {
-  product: any;
+  product: any = {}; // Initialize product to an empty object
+  images: string[] = [];  // Array to hold images
 
   constructor(
     public dialogRef: MatDialogRef<ProductDetailComponent>,
@@ -25,7 +26,13 @@ export class ProductDetailComponent {
 
   loadProduct(): void {
     this.productService.getProduct(this.data.productId).subscribe((data) => {
-      this.product = data;
+      if (data) {
+        this.product = data;
+        this.images = this.product.image ? [this.product.image] : [];
+      } else {
+        console.error('Product not found');
+        this.product = { title: 'Product not found', description: 'The requested product could not be found.' };
+      }
     });
   }
 

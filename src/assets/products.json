@@ -1,20 +1,27 @@
 {
   "en": [
-    { "name": "prod1", "image": "../../assets/mirror1.jpg", "story": "prodStory1", "title": "Cosmo", "description": "Abgd" },
-    { "name": "prod2", "image": "../../assets/mirror2.jpg", "story": "prodStory2", "title": "Terminal", "description": "Evzt" },
-    { "name": "prod3", "image": "../../assets/mirror3.jpg", "story": "prodStory3", "title": "Tiny Universe", "description": "Iklmn" },
-    { "name": "prod4", "image": "../../assets/mirror4.webp", "story": "prodStory4", "title": "Table of Infinity", "description": "Opjrst" }
+    {
+      "id": "6dca1c83-2343-42c3-9dd2-27188abc485c",
+      "name": "prod1",
+      "image": "../../assets/mirror1.jpg",
+      "story": "prodStory1",
+      "title": "Cosmo",
+      "description": "Abgd"
+    },
+    { "id": "9dcb4e3a-1276-4653-80d4-549742661698", "name": "prod2", "image": "../../assets/mirror2.jpg", "story": "prodStory2", "title": "Terminal", "description": "Evzt" },
+    { "id": "2aee3b81-5c58-48d0-8936-283f26be45eb", "name": "prod3", "image": "../../assets/mirror3.jpg", "story": "prodStory3", "title": "Tiny Universe", "description": "Iklmn" },
+    { "id": "7afb3bdc-7e7c-42a3-baa3-c28feadcb078", "name": "prod4", "image": "../../assets/mirror4.webp", "story": "prodStory4", "title": "Table of Infinity", "description": "Opjrst" }
   ],
   "ge": [
-    { "name": "prod1", "image": "../../assets/mirror1.jpg", "story": "prodStory1", "title": "კოსმო", "description": "აბგდ" },
-    { "name": "prod2", "image": "../../assets/mirror2.jpg", "story": "prodStory2", "title": "ტერმინალი", "description": "ევზთ" },
-    { "name": "prod3", "image": "../../assets/mirror3.jpg", "story": "prodStory3", "title": "ციცქნა სამყარო", "description": "იკლმნ" },
-    { "name": "prod4", "image": "../../assets/mirror4.webp", "story": "prodStory4", "title": "უსასრულობის მაგიდა", "description": "ოპჟრსტ" }
+    { "id": "6dca1c83-2343-42c3-9dd2-27188abc485c", "name": "prod1", "image": "../../assets/mirror1.jpg", "story": "prodStory1", "title": "კოსმო", "description": "აბგდ" },
+    { "id": "9dcb4e3a-1276-4653-80d4-549742661698", "name": "prod2", "image": "../../assets/mirror2.jpg", "story": "prodStory2", "title": "ტერმინალი", "description": "ევზთ" },
+    { "id": "2aee3b81-5c58-48d0-8936-283f26be45eb", "name": "prod3", "image": "../../assets/mirror3.jpg", "story": "prodStory3", "title": "ციცქნა სამყარო", "description": "იკლმნ" },
+    { "id": "7afb3bdc-7e7c-42a3-baa3-c28feadcb078", "name": "prod4", "image": "../../assets/mirror4.webp", "story": "prodStory4", "title": "უსასრულობის მაგიდა", "description": "ოპჟრსტ" }
   ],
   "ru": [
-    { "name": "prod1", "image": "../../assets/mirror1.jpg", "story": "prodStory1", "title": "Космо", "description": "Абгд" },
-    { "name": "prod2", "image": "../../assets/mirror2.jpg", "story": "prodStory2", "title": "Терминал", "description": "Евзт" },
-    { "name": "prod3", "image": "../../assets/mirror3.jpg", "story": "prodStory3", "title": "Маленькая Вселенная", "description": "Иклмн" },
-    { "name": "prod4", "image": "../../assets/mirror4.webp", "story": "prodStory4", "title": "Стол Бесконечности", "description": "Оперст" }
+    { "id": "6dca1c83-2343-42c3-9dd2-27188abc485c", "name": "prod1", "image": "../../assets/mirror1.jpg", "story": "prodStory1", "title": "Космо", "description": "Абгд" },
+    { "id": "9dcb4e3a-1276-4653-80d4-549742661698", "name": "prod2", "image": "../../assets/mirror2.jpg", "story": "prodStory2", "title": "Терминал", "description": "Евзт" },
+    { "id": "2aee3b81-5c58-48d0-8936-283f26be45eb", "name": "prod3", "image": "../../assets/mirror3.jpg", "story": "prodStory3", "title": "Маленькая Вселенная", "description": "Иклмн" },
+    { "id": "7afb3bdc-7e7c-42a3-baa3-c28feadcb078", "name": "prod4", "image": "../../assets/mirror4.webp", "story": "prodStory4", "title": "Стол Бесконечности", "description": "Оперст" }
   ]
 }

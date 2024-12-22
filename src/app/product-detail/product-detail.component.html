@@ -1,5 +1,7 @@
 <div class="dialog-container" *ngIf="product">
-  <img [src]="product.image" [alt]="product.title" class="image-container">
-  <h2>{{ data.title }}</h2>
-  <p>{{ data.description }}</p>
+  <div *ngIf="images.length > 0" class="image-gallery">
+    <img *ngFor="let image of images" [src]="image" [alt]="product.title" class="image-container">
+  </div>
+  <h2>{{ product.title }}</h2>
+  <p>{{ product.description }}</p>
 </div>

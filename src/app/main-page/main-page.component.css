@@ -115,6 +115,11 @@ header img {
   padding-right: 8px;
 }
 
+.custom-dialog-backdrop {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: backdrop-filter 0.3s ease;
+}
 
 /* Footer styling */
 footer {

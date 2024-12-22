@@ -21,7 +21,9 @@ export class ProductService {
     return this.currentLang.asObservable().pipe(
       switchMap((lang) =>
         this.http.get<ProductsByLanguage>(this.productsUrl).pipe(
-          map((products) => products[lang] || [])
+          map((products) => {
+            return products[lang] || [];
+          })
         )
       )
     );
@@ -29,7 +31,10 @@ export class ProductService {
 
   getProduct(productId: string): Observable<Product | undefined> {
     return this.getProducts().pipe(
-      map((products) => products.find((product) => product.id === productId))
+      map((products) => {
+        const product = products.find((product) => product.id === productId);
+        return product;
+      })
     );
   }
 }

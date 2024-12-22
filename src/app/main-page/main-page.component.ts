@@ -45,8 +45,8 @@ export class MainPageComponent {
   openDialog(product: any): void {
     const dialogRef = this.dialog.open(ProductDetailComponent, {
       width: '600px',
-      height: '400px',
-      data: product,
+      height: 'auto',
+      data: {product, productId: product.id},
     });
 
     dialogRef.backdropClick().subscribe(() => {

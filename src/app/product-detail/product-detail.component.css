@@ -5,6 +5,13 @@
   text-align: center;
 }
 
+.image-gallery {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .image-container {
   display: flex;
   justify-content: center;
