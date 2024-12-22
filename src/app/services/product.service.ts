@@ -10,11 +10,16 @@ import { ProductsByLanguage } from '../models/prodictsByLanguage.model';
 export class ProductService {
   private productsUrl = '../../assets/products.json';
   private currentLang = new BehaviorSubject<string>('en');
+  private currentColor = new BehaviorSubject<string>('white');
 
   constructor(private http: HttpClient) { }
 
   setLanguage(lang: string) {
     this.currentLang.next(lang);
+  }
+
+  setColor(color: string) {
+    this.currentColor.next(color);
   }
 
   getProducts(): Observable<Product[]> {
@@ -36,5 +41,9 @@ export class ProductService {
         return product;
       })
     );
+  }
+
+  getColor(): Observable<string> {
+    return this.currentColor.asObservable();
   }
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ProductDetailComponent } from '../product-detail/product-detail.component';
@@ -14,12 +14,14 @@ import { ProductService } from '../services/product.service';
 })
 export class MainPageComponent {
   products: any[] = [];
+  isBlackTheme: boolean = false;
 
 
   constructor(
     private translate: TranslateService,
     public dialog: MatDialog,
-    private productService: ProductService
+    private productService: ProductService,
+    private renderer: Renderer2
   ) {
     this.translate.setDefaultLang('ge');
     this.translate.use('ge');
@@ -28,6 +30,7 @@ export class MainPageComponent {
 
   ngOnInit() {
     this.loadProducts();
+    this.applyColorTheme();
   }
 
   loadProducts() {
@@ -54,5 +57,22 @@ export class MainPageComponent {
     });
   }
 
+  changeColor() {
+    this.isBlackTheme = !this.isBlackTheme;
+    this.applyColorTheme();
+  }
+
+  applyColorTheme() {
+    const theme = this.isBlackTheme ? 'black' : 'white';
+    this.productService.setColor(theme);
+
+    if (theme === 'black') {
+      this.renderer.setStyle(document.body, 'background-color', 'black');
+      this.renderer.setStyle(document.body, 'color', 'white');
+    } else {
+      this.renderer.setStyle(document.body, 'background-color', 'white');
+      this.renderer.setStyle(document.body, 'color', 'black');
+    }
+  }
 }
 

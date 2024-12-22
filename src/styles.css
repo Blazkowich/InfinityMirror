@@ -12,3 +12,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
+
+.white-theme {
+  background-color: white;
+  color: black;
+}
+
+.black-theme {
+  background-color: black;
+  color: white;
+}
